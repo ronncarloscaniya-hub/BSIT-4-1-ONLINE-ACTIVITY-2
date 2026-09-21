@@ -1,0 +1,101 @@
+Reference:
+1.	https://medium.com/@saurabhdahibhate50/devops-day-12-task-ec437bc30715
+2.	https://www.geeksforgeeks.org/git/basic-git-commands-with-examples/
+3.	https://git-scm.com/cheat-sheet
+4.	https://dev.to/thekrprince/basic-git-commands-every-developer-should-know-1854
+5.	https://github.com/joshnh/Git-Commands
+6.	https://www.youtube.com/watch?v=kLroKXgNDsc&vl=en&t=25
+7.	https://medium.com/@victoriafluharty/get-to-know-the-command-line-basic-git-commands-3907436278a7
+8.	https://www.youtube.com/watch?v=b4zp02iULYY
+9.	https://medium.com/kodehauz/basic-git-commands-with-examples-8c145949b1bd
+10.	https://www.youtube.com/watch?v=kLroKXgNDsc&vl=en&t=25
+Basic Linux Commands
+•	pwd: Prints the current working directory.
+o	Sample usage: pwd [1]
+•	ls: Lists files and folders in the current directory.
+o	Sample usage: ls -la
+•	cd: Changes the current directory.
+o	Sample usage: cd /home/user/documents
+•	mkdir: Creates a new directory.
+o	Sample usage: mkdir my_folder
+•	cp: Copies files or directories.
+o	Sample usage: cp file.txt backup.txt
+•	mv: Moves or renames files and directories.
+o	Sample usage: mv old.txt new.txt
+o	
+•	rm: Deletes files or directories.
+o	Sample usage: rm file.txt
+•	cat: Displays the contents of a file.
+o	Sample usage: cat notes.txt
+•	grep: Searches for text inside files.
+o	Sample usage: grep "error" log.txt
+•	chmod: Changes file permissions.
+o	Sample usage: chmod +x script.sh
+chown — Change the ownership of files or directories
+•	ps — Display information about running processes
+•	top — Display a real-time view of the system processes and resource usage
+•	grep — Search for a specific pattern in files or output
+•	tar — Create or extract compressed archive files
+•	ssh — Connect to a remote server or device using the Secure Shell protocol
+•	sudo — Run a command with elevated privileges
+•	ifconfig — Display network interface configuration information
+•	ping — Check the connectivity to a network device or server by sending packets of data.
+•	chown — Change the ownership of files or directories
+
+
+Basic Git Commands
+•	git init
+o	Description: Starts a brand new, empty Git repository in your current project folder.
+o	Sample usage: git init
+o	Common options/flags: --bare (creates a repository without a working directory for sharing) [1, 2]
+•	git restore
+o	Description: Discards changes in your working directory or unstages files.
+o	Sample usage: git restore index.html
+o	Common options/flags: --staged (unstage a file) [1]
+•	git status
+o	Description: Shows the current state of your working directory and staging area.
+o	Sample usage: git status
+o	Common options/flags: -s or --short (gives a compact summary) [1, 2]
+•	git branch
+o	Description: Lists, creates, or deletes branches.
+o	Sample usage: git branch feature-login
+o	Common options/flags: -d (deletes a branch), -a (lists both local and remote branches) [1, 2, 3]
+•	git add
+o	Description: Adds changes from your working directory into the staging area.
+o	Sample usage: git add .
+o	Common options/flags: -A or --all (stages all changes including deletions) [1, 2, 3]
+•	git checkout / git switch
+o	Description: Switches between different branches or restores files.
+o	Sample usage: git switch main or git checkout main
+o	Common options/flags: -b (creates and switches to a new branch) [1, 2, 3]
+•	git commit
+o	Description: Saves a permanent snapshot of your staged changes into the project history.
+o	Sample usage: git commit -m "Fix homepage bug"
+o	Common options/flags: -a (automatically stage and commit modified files), --amend (modify the last commit) [1, 2, 3, 4]
+•	git merge
+o	Description: Combines history and changes from a separate branch into your current branch.
+o	Sample usage: git merge feature-login
+o	Common options/flags: --no-ff (creates a merge commit even if a fast-forward is possible) [1, 2, 3]
+•	git log
+o	Description: Displays the chronological commit history of your repository.
+o	Sample usage: git log
+o	Common options/flags: --oneline (shows each commit on a single line), --graph (shows an ASCII graph of branch history) [1, 2, 3]
+•	git tag
+o	Description: Adds a permanent marker or label to a specific commit, usually used for releases.
+o	Sample usage: git tag v1.0.0
+o	Common options/flags: -a (creates an annotated tag with a message) [1]
+•	git diff
+o	Description: Shows line-by-line differences between files, commits, or trees.
+o	Sample usage: git diff
+o	Common options/flags: --staged (shows changes between staged area and last commit) [1]
+•	git clone
+o	Description: Downloads a complete copy of an existing remote repository onto your computer.
+o	Sample usage: git clone https://github.com
+o	Common options/flags: --depth 1 (clones only the most recent commit to save time/bandwidth) [1, 2, 3, 4]
+The Three-Tree Architecture of Git
+Git manages your project using three main states or "trees":
+1.	The Working Directory: The actual folder on your computer where you see, edit, and create files. Changes here are untracked or modified until you manually move them forward.
+2.	The Staging Area (Index): A hidden file (the index) that acts as a holding zone. When you run git add, you take a snapshot of your working files and place them here, prepping them to be saved. [1]
+3.	The HEAD (Local Repository): The final permanent storage area. When you run git commit, Git takes the snapshots from the staging area and stores them securely as permanent history in your local .git database.
+
+“I Ronn Carlos Caniya used Google and it AI Overview to search during assignment preparation.  I reviewed and edited the content as needed and takes full responsibility for the final content of the work.”
